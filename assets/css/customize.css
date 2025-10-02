@@ -1,8 +1,8 @@
 /* 본문 기본 크기와 줄간격 */
-body { font-size: 14px; line-height: 1.7; }
+body { font-size: 18px; line-height: 1.7; }
 
 /* 테마가 더 구체적인 선택자로 덮으면 여기도 함께 키워줍니다 */
 .post, .page, .content, .container, main, article {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.7;
 }
