@@ -5,4 +5,4 @@ permalink: /teaching/
 hide_profile: true
 ---
 
-# Teaching
+## Teaching
