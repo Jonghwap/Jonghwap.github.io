@@ -10,7 +10,7 @@ hide_profile: true
 <ol class="publication-list">
   <li><span class="publication-rank">#3</span> dfd</li>
   <li><span class="publication-rank">#2</span> dfsdf</li>
-  <li><span class="publication-rank">#1</span> *On*</li>
+  <li><span class="publication-rank">#1</span> **On**</li>
 </ol>
 
 ### Focus areas
