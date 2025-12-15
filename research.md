@@ -5,10 +5,11 @@ permalink: /research/
 hide_profile: true
 ---
 
-## Research
+## Publication
 
-My research broadly lies in stochastic analysis and optimal transport, with a particular focus on mathematical finance and mode
-l uncertainty.
+1. dfd
+2. dfsdf
+3. dfsdfs
 
 ### Focus areas
 - Adapted (causal) optimal transport and its applications
