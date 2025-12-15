@@ -93,13 +93,7 @@
         <br>
 
       </header>
-      
-      <nav class="top-nav">
-        <a href="{{ '/' | relative_url }}">About me</a>
-        <a href="{{ '/research/' | relative_url }}">Research</a>
-        <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
-      </nav>
-      
+      {% include navigation.html %}
       <section>
 
       {{ content }}
