@@ -57,7 +57,7 @@ exclude:
   - minimal-light.gemspec
   - html_source_file/
 
-  navigation:
+navigation:
   - title: About me
     url: /
   - title: Research
