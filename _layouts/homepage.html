@@ -35,8 +35,9 @@
     {% endif %}
 
   </head>
-  <body>
+  <body class="{% if page.hide_profile %}no-profile{% endif %}">
     <div class="wrapper">
+      {% unless page.hide_profile %}
       <header>
         
         {% if site.avatar %}
@@ -93,6 +94,7 @@
         <br>
 
       </header>
+      {% endunless %}
       {% include navigation.html %}
       <section>
 
@@ -122,3 +124,5 @@
     {% endif %}
   </body>
 </html>
+
+
