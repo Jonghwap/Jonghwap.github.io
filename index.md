@@ -4,20 +4,15 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+Hi, I am a PhD candidate in Mathematics at Carnegie Mellon University, advised by [Martin Larsson](https://sites.google.com/view/martin-larsson)  and [Johannes Wiesel](https://sites.google.com/view/johannes-wiesel). Before starting my PhD, I earned a Master’s degree in Mathematics and a Bachelor’s degree in Economics and Mathematics (double major) at Seoul National University.
 
-## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+My research broadly lies in stochastic analysis and optimal transport, with a particular focus on applications in mathematical finance and related areas. I am especially interested in developing theoretical frameworks that remain robust in high-noise, low-signal environments where model uncertainty and misspecification are prevalent.
 
-## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+During my PhD, I have primarily focused on developing the theory of adapted (causal) optimal transport. 
 
-{% include_relative _includes/publications.md %}
+I will be on the **2025-2026** job market.
 
-{% include_relative _includes/services.md %}
+Email: jonghwap [at] andrew [dot] cmu [dot] edu
+My CV is available here.
