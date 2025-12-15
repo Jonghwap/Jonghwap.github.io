@@ -56,3 +56,11 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+
+  navigation:
+  - title: About me
+    url: /
+  - title: Research
+    url: /research/
+  - title: Teaching
+    url: /teaching/
