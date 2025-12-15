@@ -4,8 +4,21 @@
 @import "minimal-light";
 
 
+// Keep the wrapper as a positioning context so the navigation bar can
+// be anchored to the top-right corner of the page content.
+.wrapper {
+  position: relative;
+}
+
 .site-nav {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
 }
 
 .site-nav ul {
@@ -13,12 +26,14 @@
   padding: 0;
   display: flex;
   gap: 1.5rem;
+  margin: 0;
 }
 
 .site-nav a {
   text-decoration: none;
   font-weight: 500;
   color: #333;
+  padding: 0.25rem 0.5rem;
 }
 
 .site-nav a:hover {
