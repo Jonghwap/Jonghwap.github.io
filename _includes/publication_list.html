@@ -22,58 +22,24 @@
       <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
       {% endif %}
       <div class="publication-meta">
-        <em>{{ pub.journal }}</em>, {{ pub.year }}
-        {% assign abstract_text = pub.abstract | to_s | strip %}        
+        <em>{{ pub.journal }}</em>, {{ pub.year }}    
         {% assign has_journal_url = pub.journal_url and pub.journal_url != '' and pub.journal_url != empty %}
         {% assign has_arxiv = pub.arxiv and pub.arxiv != '' and pub.arxiv != empty %}
-        {% assign has_abstract = abstract_text != '' %}
-        {% assign show_link_row = has_journal_url or has_arxiv or has_abstract %}
-        {% assign abstract_id = 'abstract-' | append: forloop.index0 %}
-        {% if show_link_row %}       
-        <span class="publication-links">
-          {% if has_arxiv %}          
-          <a class="arxiv-button" href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>
-          {% endif %}
-          {% if has_journal_url %}          
-          <a class="journal-button" href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>
-          {% endif %}
-          {% if has_abstract %}
-          <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="{{ abstract_id }}">
-            <span class="summary-label">summary</span>
-            <span class="summary-arrow" aria-hidden="true">▼</span>
-          </button>
-          {% endif %}         
+        {% if has_journal_url and has_arxiv %}        
+        <span class="publication-links">    
+          <a class="arxiv-button" href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>         
+          <a class="journal-button" href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>        
         </span>
+        {% elsif has_journal_url %}
+        <span class="publication-links"><a class="journal-button" href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a></span>
+        {% elsif has_arxiv %}
+        <span class="publication-links"><a class="arxiv-button" href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a></span>        
         {% endif %}
-      </div>
-      {% if has_abstract %}
-      <div class="abstract-panel" id="{{ abstract_id }}" hidden>
-        <div class="abstract-content">{{ pub.abstract | markdownify }}</div>
-      </div>
-      {% endif %}      
+      </div>    
     </div>
   </li>
   {% endfor %}
 </ol>
-<script>
-  (function() {
-    if (window.__publicationSummaryInitialized) return;
-    window.__publicationSummaryInitialized = true;
-    document.addEventListener('click', function(event) {
-      const button = event.target.closest('.summary-toggle');
-      if (!button) return;
-
-      const targetId = button.getAttribute('aria-controls');
-      const panel = document.getElementById(targetId);
-      if (!panel) return;
-
-      const expanded = button.getAttribute('aria-expanded') === 'true';
-      button.setAttribute('aria-expanded', (!expanded).toString());
-      button.classList.toggle('is-open', !expanded);
-      panel.hidden = expanded;
-    });
-  })();
-</script>
 {% else %}
 <p>No publications have been added yet. Add entries under <code>_publications/</code> to list them.</p>
 {% endif %}
