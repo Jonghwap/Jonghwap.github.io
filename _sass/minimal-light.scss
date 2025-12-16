@@ -342,10 +342,10 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.15em 0.45em;
+  padding: 0.1em 0.3em;
   background-color: #ffffff;
-  color: #334155;
-  border: 1px solid #cbd5e1;
+  color: #039827;
+  border: 1px solid #039827;
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.1;
@@ -364,8 +364,9 @@ a:hover {
 
 .summary-toggle:hover,
 .summary-toggle:focus {
-  background-color: #f1f5f9;
-  border-color: #94a3b8;
+  background-color: #ecfdf3;
+  color: #02661E;
+  border-color: #02661E
 }
 
 .abstract-panel {
