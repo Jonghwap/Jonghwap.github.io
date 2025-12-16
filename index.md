@@ -16,4 +16,4 @@ I will be on the **2025-2026** job market.
 
 Email: jonghwap [at] andrew [dot] cmu [dot] edu
 
-My CV is available [here](/assets/files/CV_Jonghwa_Park.pdf).
+My CV is available <a class="accent-link" href="/assets/files/CV_Jonghwa_Park.pdf">here</a>.
