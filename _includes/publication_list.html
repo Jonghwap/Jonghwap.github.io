@@ -1,7 +1,14 @@
 {% assign items = include.publications | default: site.publications %}
 {% if items and items.size > 0 %}
-{% assign sorted = items | sort: "title" %}
-{% assign sorted = sorted | sort: "year" | reverse %}
+{% assign has_order = items | where_exp: "p", "p.order" %}
+{% if has_order and has_order.size == items.size %}
+{% comment %}Respect manual ordering when every item provides an order field (higher numbers appear first).{% endcomment %}
+{% assign sorted = items | sort: "order" | reverse %}
+{% else %}
+{% comment %}Fallback ordering: sort by title to stabilize, then by year (newest first).{% endcomment %}
+{% assign sorted_by_title = items | sort: "title" %}
+{% assign sorted = sorted_by_title | sort: "year" | reverse %}
+{% endif %}
 {% assign total = sorted.size %}
 <ol class="publication-list">
   {% for pub in sorted %}
