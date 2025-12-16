@@ -4,7 +4,7 @@ year: 2024
 journal: Under revision
 coauthors:
   - Jose Blanchet
-  - [Martin Larsson](https://sites.google.com/view/martin-larsson)
+  - Martin Larsson
   - Johannes Wiesel
 arxiv: https://arxiv.org/abs/2407.21492
 journal_url:
