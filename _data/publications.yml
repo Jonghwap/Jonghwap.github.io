@@ -2,26 +2,46 @@
 # Add each publication under the `publications` key following the example structure.
 
 publications:
-  - title: "On Robust Transport under Heavy Noise"
-    coauthors:
-      - Alice Smith
-      - Bob Lee
-    journal: Journal of Applied Mathematics
-    year: 2024
-    arxiv: https://arxiv.org/abs/2401.00001
-    journal_url: https://doi.org/10.1000/j.jam.2024.01.001
-
-  - title: "Adaptive Optimal Transport for Time-Series Data"
+  - title: "On a T_1 Transport inequality for the adapted Wasserstein distance"
     coauthors: []
-    journal: SIAM Journal on Mathematics of Data Science
-    year: 2023
-    arxiv: https://arxiv.org/abs/2305.00002
-    journal_url: https://doi.org/10.1137/23M0000023
+    journal: Under revision
+    year: 2025
+    arxiv: https://www.arxiv.org/abs/2507.19215
+    journal_url: []
 
-  - title: "Stochastic Control Perspectives on Optimal Transport"
+  - title: "The fast rate of convergence of the smooth adapted Wasserstein distance"
     coauthors:
-      - Charlie Nguyen
-    journal: Annals of Applied Probability
-    year: 2022
-    arxiv: https://arxiv.org/abs/2203.00003
-    journal_url: https://doi.org/10.1214/22-AAP000
+      - Martin Larsson
+      - Johannes Wiesel
+    journal: Submitted
+    year: 2025
+    arxiv: https://arxiv.org/abs/2503.10827
+    journal_url: []
+
+  - title: "Bounding adapted Wasserstein metrics"
+    coauthors:
+      - Jose Blanchet
+      - Martin Larsson
+      - Johannes Wiesel
+    journal: Under revision
+    year: 2024
+    arxiv: https://arxiv.org/abs/2407.21492
+    journal_url: []
+
+  - title: "On concentration of the empirical measure for radial transport costs"
+    coauthors:
+      - Martin Larsson
+      - Johannes Wiesel
+    journal: Stochastic Processes and their Applications 178 (104466)
+    year: 2024
+    arxiv: https://arxiv.org/abs/2305.18636
+    journal_url: https://www.sciencedirect.com/science/article/pii/S0304414924001728
+
+  - title: "Pricing and hedging short-maturity Asian options in local volatility models"
+    coauthors:
+      - Jaehyun Kim
+      - Hyungbin Park
+    journal: Pre-PhD research
+    year: 2019
+    arxiv: https://arxiv.org/abs/1911.12944
+    journal_url: []
