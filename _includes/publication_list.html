@@ -25,7 +25,6 @@
         <em>{{ pub.journal }}</em>, {{ pub.year }}
         {% assign has_journal_url = pub.journal_url and pub.journal_url != '' and pub.journal_url != empty %}
         {% assign has_arxiv = pub.arxiv and pub.arxiv != '' and pub.arxiv != empty %}
-        {% if has_journal_url and has_arxiv %}
         {% assign has_abstract = pub.abstract and pub.abstract != '' and pub.abstract != empty %}
         {% assign show_link_row = has_journal_url or has_arxiv or has_abstract %}
         {% assign abstract_id = pub.title | append: '-' | append: forloop.index0 | slugify | prepend: 'abstract-' %}
