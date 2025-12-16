@@ -14,11 +14,12 @@
       {% endif %}
       <div class="publication-meta">
         <em>{{ pub.journal }}, {{ pub.year }}</em>
-        {% if pub.arxiv %}
-        [<a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arxiv</a>]
-        {% endif %}
-        {% if pub.journal_url %}
+        {% if pub.journal_url and pub.arxiv %}
+        [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a> | <a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>]
+        {% elsif pub.journal_url %}
         [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>]
+        {% elsif pub.arxiv %}
+        [<a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>]
         {% endif %}
       </div>
     </div>
@@ -27,4 +28,4 @@
 </ol>
 {% else %}
 <p>No publications have been added yet. Update <code>_data/publications.yml</code> to list them.</p>
-{% endif %}
+{% endif %}    
