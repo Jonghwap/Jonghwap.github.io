@@ -34,11 +34,16 @@
   font-weight: 500;
   color: #000 !important;
   padding: 0.25rem 0.5rem;
+  font-size: 1.1rem; ## navigation bar 글씨 크기
 }
 
 .site-nav a:hover {
   text-decoration: underline;
     color: #222 !important;
+}
+
+.wrapper > section {
+  padding-top: 2.5rem; ## navigation bar와 본문 사이의 거리
 }
 
 @media (prefers-color-scheme: dark) {
