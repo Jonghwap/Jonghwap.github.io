@@ -16,7 +16,7 @@ publications:
     journal: Submitted
     year: 2025
     arxiv: https://arxiv.org/abs/2503.10827
-    journal_url: []
+    journal_url:
 
   - title: "Bounding adapted Wasserstein metrics"
     coauthors:
@@ -26,7 +26,7 @@ publications:
     journal: Under revision
     year: 2024
     arxiv: https://arxiv.org/abs/2407.21492
-    journal_url: []
+    journal_url:
 
   - title: "On concentration of the empirical measure for radial transport costs"
     coauthors:
@@ -44,4 +44,4 @@ publications:
     journal: Pre-PhD research
     year: 2019
     arxiv: https://arxiv.org/abs/1911.12944
-    journal_url: []
+    journal_url:
