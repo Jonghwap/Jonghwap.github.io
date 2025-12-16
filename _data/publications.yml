@@ -7,7 +7,7 @@ publications:
     journal: Under revision
     year: 2025
     arxiv: https://www.arxiv.org/abs/2507.19215
-    journal_url: []
+    journal_url:
 
   - title: "The fast rate of convergence of the smooth adapted Wasserstein distance"
     coauthors:
