@@ -221,7 +221,14 @@ a:hover {
   color:#069;
 }
 
-.arxiv-button {
+.publication-links {
+  display: inline-flex;
+  gap: 0.4em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.arxiv-button, .journal-button {
   display: inline-block;
   padding: 0.2em 0.75em;
   background-color: #ffffff;
@@ -234,7 +241,9 @@ a:hover {
 }
 
 .arxiv-button:hover,
-.arxiv-button:focus {
+.arxiv-button:focus,
+.journal-button:hover,
+.journal-button:focus {
   background-color: #f2fff6;
   color: #146735;
   border-color: #146735;
