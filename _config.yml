@@ -45,6 +45,13 @@ google_analytics: UA-111540567-4
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 remote_theme: yaoyao-liu/minimal-light
 
+# Plugins required by the minimal-light remote theme and GitHub Pages
+# environment. Declaring them explicitly keeps local builds aligned with
+# the GitHub Actions build output shown in the logs.
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
 # The following files will be removed from the generated website.
 exclude:
   - Gemfile
