@@ -15,4 +15,3 @@ hide_profile: true
 
 ### Updates
 More detailed project and publication information will be shared soon.
-teaching.md
