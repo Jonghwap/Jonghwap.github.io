@@ -241,10 +241,10 @@ h1 {
 }
 
 h2 {
-  color: #000;
-  font-weight: 600;
-  margin: 0 0 14px;
-  font-size: 157%;
+  color: #000; // font color
+  font-weight: 600; // font 두께
+  margin: 0 0 14px; // font와 본문 사이의 margin
+  font-size: 157%; // font 사이즈
 }
 
 @media (prefers-color-scheme: dark) {
