@@ -4,21 +4,23 @@
 <ol class="publication-list">
   {% for pub in items %}
   <li class="publication-entry">
-    <div class="publication-title">
-      <span class="publication-rank">#{{ total | minus: forloop.index0 }}</span>
-      <strong>{{ pub.title }}</strong>
-    </div>
-    {% if pub.coauthors and pub.coauthors.size > 0 %}
-    <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
-    {% endif %}
-    <div class="publication-meta">
-      <em>{{ pub.journal }}, {{ pub.year }}</em>
-      {% if pub.arxiv %}
-      [<a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arxiv</a>]
+    <span class="publication-rank">#{{ total | minus: forloop.index0 }}</span>
+    <div class="publication-details">
+      <div class="publication-title">
+        <strong>{{ pub.title }}</strong>
+      </div>
+      {% if pub.coauthors and pub.coauthors.size > 0 %}
+      <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
       {% endif %}
-      {% if pub.journal_url %}
-      [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>]
-      {% endif %}
+      <div class="publication-meta">
+        <em>{{ pub.journal }}, {{ pub.year }}</em>
+        {% if pub.arxiv %}
+        [<a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arxiv</a>]
+        {% endif %}
+        {% if pub.journal_url %}
+        [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>]
+        {% endif %}
+      </div>
     </div>
   </li>
   {% endfor %}
