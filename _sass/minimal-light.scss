@@ -286,8 +286,8 @@ a:hover {
   display: inline-block;
   padding: 0.1em 0.3em; // 버튼안 여백 위아래, 좌우
   background-color: #ffffff;
-  color: #2e8b57;
-  border: 1px solid #2e8b57;
+  color: #22c55e;
+  border: 1px solid #22c55e;
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.1; // 글씨 크기+위아래 여백
@@ -298,9 +298,9 @@ a:hover {
 .arxiv-button:focus,
 .journal-button:hover,
 .journal-button:focus {
-  background-color: #f2fff6;
-  color: #3d775f;
-  border-color: #3d775f;
+  background-color: #ecfdf3;
+  color: #16a34a;
+  border-color: #16a34a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -312,12 +312,12 @@ a:hover {
 // 색깔이 있는 강조 링크
 
 .accent-link {
-  color: #2e8b57;
+  color: #22c55e;
 }
 
 .accent-link:hover,
 .accent-link:focus {
-  color: #3d775f;
+  color: #16a34a;
   text-decoration: underline;
 }
 
