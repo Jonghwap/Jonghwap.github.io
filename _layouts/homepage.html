@@ -34,6 +34,18 @@
     <link rel="stylesheet" href="{{ "/assets/css/publications-no-dark-mode.css" | relative_url }}">
     {% endif %}
 
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+        },
+        svg: {
+          fontCache: 'global',
+        },
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    
   </head>
   <body class="{% if page.hide_profile %}no-profile{% endif %}">
     <div class="wrapper">
