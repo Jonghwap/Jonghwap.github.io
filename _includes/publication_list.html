@@ -1,0 +1,24 @@
+{% assign items = include.publications | default: site.data.publications.publications %}
+{% if items and items.size > 0 %}
+<ol class="publication-list">
+  {% for pub in items %}
+  <li class="publication-entry">
+    <div class="publication-title"><strong>{{ pub.title }}</strong></div>
+    {% if pub.coauthors and pub.coauthors.size > 0 %}
+    <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
+    {% endif %}
+    <div class="publication-meta">
+      <em>{{ pub.journal }}, {{ pub.year }}</em>
+      {% if pub.arxiv %}
+      [<a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arxiv</a>]
+      {% endif %}
+      {% if pub.journal_url %}
+      [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>]
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p>No publications have been added yet. Update <code>_data/publications.yml</code> to list them.</p>
+{% endif %}
