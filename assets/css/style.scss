@@ -69,6 +69,7 @@
   margin-bottom: 0.75rem;
   display: flex;
   column-gap: 0.5rem;
+  align-items: flex-start;
 }
 
 .publication-rank {
@@ -81,4 +82,7 @@
 
 .publication-details {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
