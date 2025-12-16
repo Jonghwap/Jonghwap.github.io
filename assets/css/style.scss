@@ -34,7 +34,7 @@
   font-weight: 500;
   color: #000 !important;
   padding: 0.25rem 0.5rem;
-  font-size: 1.1rem; // navigation bar에서 font size
+  font-size: 1.2rem; // navigation bar에서 font size
 }
 
 .site-nav a:hover {
@@ -43,7 +43,7 @@
 }
 
 .wrapper > section {
-  padding-top: 2.5rem; // navigation bar이랑 본문 사이의 거리
+  padding-top: 5rem; // navigation bar이랑 본문 사이의 거리
 }
 
 @media (prefers-color-scheme: dark) {
