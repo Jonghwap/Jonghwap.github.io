@@ -137,6 +137,15 @@ email {
 
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
+body {
+  color: #111;
+}
+
+header {
+  color: #111;
+}
+
+
 autocolor{
   color:#595959;
 }
@@ -162,6 +171,10 @@ papertitle {
     body {
         background-color: #20212b;
         color: #dadbdf;
+    }
+  
+    header {
+      color: #dadbdf;
     }
 
     autocolor{
@@ -230,18 +243,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color: #000;
+  color: #111;
   margin: 0 0 16px;
 }
 
 h1 {
   font-weight: 640;
-  color: #000;
+  color: #111;
   margin: 0 0 16px;
 }
 
 h2 {
-  color: #000; // font color
+  color: #111; // font color
   font-weight: 640; // font 두께
   margin: 0 0 16px; // font와 본문 사이의 margin
   // font-size: 157%; // font 사이즈
@@ -249,7 +262,7 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6 {
-    color: #000;
+    color: #dadbdf;
   }
 }
 
@@ -286,8 +299,8 @@ a:hover {
   display: inline-block;
   padding: 0.1em 0.3em; // 버튼안 여백 위아래, 좌우
   background-color: #ffffff;
-  color: #22c55e;
-  border: 1px solid #22c55e;
+  color: #039827;
+  border: 1px solid #039827;
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.1; // 글씨 크기+위아래 여백
@@ -299,25 +312,39 @@ a:hover {
 .journal-button:hover,
 .journal-button:focus {
   background-color: #ecfdf3;
-  color: #16a34a;
-  border-color: #16a34a;
+  color: #02661E;
+  border-color: #02661E;
 }
 
 @media (prefers-color-scheme: dark) {
   a {
-    color:#000;
+    color:#039827;
+  }
+
+  .arxiv-button, .journal-button {
+    color: #039827;
+    border-color: #039827;
+  }
+
+  .arxiv-button:hover,
+  .arxiv-button:focus,
+  .journal-button:hover,
+  .journal-button:focus {
+    background-color: #1a2d1f;
+    color: #02661E;
+    border-color: #02661E;
   }
 }
 
 // 색깔이 있는 강조 링크
 
 .accent-link {
-  color: #22c55e;
+  color: #039827;
 }
 
 .accent-link:hover,
 .accent-link:focus {
-  color: #16a34a;
+  color: #02661E;
   text-decoration: underline;
 }
 
