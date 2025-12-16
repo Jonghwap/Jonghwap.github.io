@@ -1,8 +1,10 @@
 <nav class="site-nav">
   <ul>
+    {% assign current_url = page.url | relative_url %}
     {% for item in site.navigation %}
+      {% assign item_url = item.url | relative_url %}    
       <li>
-        <a href="{{ item.url | relative_url }}">
+        <a href="{{ item_url }}" class="{% if current_url == item_url %}active{% endif %}">
           {{ item.title }}
         </a>
       </li>
