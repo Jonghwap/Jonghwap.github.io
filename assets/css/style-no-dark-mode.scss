@@ -38,6 +38,9 @@
   color: #222 !important;
 }
 
+.wrapper > section {
+  padding-top: 7rem; // navigation bar이랑 본문 사이의 거리
+}
 
 
 .no-profile header {
