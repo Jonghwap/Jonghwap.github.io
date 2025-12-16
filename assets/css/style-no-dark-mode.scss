@@ -3,6 +3,42 @@
 
 @import "minimal-light-no-dark-mode";
 
+.wrapper {
+  position: relative;
+}
+
+.site-nav {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000 !important;
+  padding: 0.25rem 0.5rem;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+  color: #222 !important;
+}
+
+
 
 .no-profile header {
   display: none;
