@@ -3,6 +3,34 @@
 
 @import "minimal-light";
 
+body {
+  font-size: 12pt;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5,
+h6 {
+  font-size: 1.05rem;
+}
+
+
+
 
 // Keep the wrapper as a positioning context so the navigation bar can
 // be anchored to the top-right corner of the page content.
