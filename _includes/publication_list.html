@@ -13,7 +13,7 @@
       <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
       {% endif %}
       <div class="publication-meta">
-        <em>{{ pub.journal }}, {{ pub.year }}</em>
+        <em>{{ pub.journal }}</em>, {{ pub.year }}
         {% if pub.journal_url and pub.arxiv %}
         [<a href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a> | <a href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>]
         {% elsif pub.journal_url %}
