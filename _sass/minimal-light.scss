@@ -296,7 +296,7 @@ a:hover {
 }
 
 .arxiv-button, .journal-button {
-  display: inline-block;
+  display: inline-flex;
   padding: 0.1em 0.3em; // 버튼안 여백 위아래, 좌우
   background-color: #ffffff;
   color: #039827;
