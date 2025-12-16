@@ -5,7 +5,7 @@ permalink: /research/
 hide_profile: true
 ---
 
-## Publication
+## Publications
 
 <ol class="publication-list">
   <li><span class="publication-rank">#3</span> dfd</li>
