@@ -1,8 +1,10 @@
-{% assign items = include.publications | default: site.data.publications.publications %}
+{% assign items = include.publications | default: site.publications %}
 {% if items and items.size > 0 %}
-{% assign total = items.size %}
+{% assign sorted = items | sort: "title" %}
+{% assign sorted = sorted | sort: "year" | reverse %}
+{% assign total = sorted.size %}
 <ol class="publication-list">
-  {% for pub in items %}
+  {% for pub in sorted %}
   <li class="publication-entry">
     <span class="publication-rank">#{{ total | minus: forloop.index0 }}</span>
     <div class="publication-details">
@@ -29,5 +31,5 @@
   {% endfor %}
 </ol>
 {% else %}
-<p>No publications have been added yet. Update <code>_data/publications.yml</code> to list them.</p>
-{% endif %}    
+<p>No publications have been added yet. Add entries under <code>_publications/</code> to list them.</p>
+{% endif %}
