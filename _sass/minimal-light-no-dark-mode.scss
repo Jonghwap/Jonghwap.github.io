@@ -127,6 +127,15 @@ darkonly {
   visibility: hidden;
 }
 
+body {
+  color: #111;
+}
+
+header {
+  color: #111;
+}
+
+
 education {
     font-weight: 500;
     font-size: 115%;
@@ -183,18 +192,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#000;
+  color:#111;
   margin:0 0 16px;
 }
 
 h1 {
   font-weight: 640;
-  color:#000;
+  color:#111;
   margin:0 0 16px;
 }
 
 h2 {
-  color:#000; // font color
+  color:#111; // font color
   font-weight: 640; // font 두께
   margin:0 0 16px; // font와 본문 사이의 margin
  // font-size: 157%; // font 크기
@@ -213,12 +222,12 @@ h1 {
 }
 
 a {
-  color:#22c55e;
+  color:#039827;
   text-decoration:none;
 }
 
 a:hover {
-  color:#16a34a
+  color:#02661E
 }
 
 .publication-links {
@@ -232,8 +241,8 @@ a:hover {
   display: inline-block;
   padding: 0.1em 0.3em; // 버튼안 여백 위아래, 좌우
   background-color: #ffffff;
-  color: #22c55e;
-  border: 1px solid #22c55e;
+  color: #039827;
+  border: 1px solid #039827;
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.1; // 기본 글씨+위아래 여백
@@ -245,8 +254,8 @@ a:hover {
 .journal-button:hover,
 .journal-button:focus {
   background-color: #ecfdf3;
-  color: #16a34a;
-  border-color: #16a34a;
+  color: #02661E;
+  border-color: #02661E;
 }
 
 a small {
