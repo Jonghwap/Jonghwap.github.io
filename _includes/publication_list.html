@@ -34,10 +34,10 @@
         {% if show_link_row %}
         <span class="publication-links">
           {% if has_arxiv %}
-          <a class="arxiv-button" href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>
+          <a class="arxiv-button" href="{{ arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
           {% endif %}
-          {% if has_journal_url %}          
-          <a class="journal-button" href="{{ pub.journal_url }}" target="_blank" rel="noopener">journal</a>
+          {% if has_journal_url %}
+          <a class="journal-button" href="{{ journal_link }}" target="_blank" rel="noopener">journal</a>
           {% endif %}
           {% if has_abstract %}
           <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="{{ abstract_id }}">
