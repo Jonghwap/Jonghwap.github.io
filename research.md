@@ -5,7 +5,7 @@ permalink: /research/
 hide_profile: true
 ---
 
-The list of publications are also available on <a class="accent-link" href="https://scholar.google.com/citations?user=9qqF088AAAAJ&hl=ko">Google Scholar</a>.
+My Google Scholar page is available <a class="accent-link" href="https://scholar.google.com/citations?user=9qqF088AAAAJ&hl=ko">here</a>.
 
 <br>
 
