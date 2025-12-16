@@ -9,8 +9,4 @@ coauthors:
 arxiv: https://arxiv.org/abs/2407.21492
 journal_url:
 order: 3
-abstract: >-
-  We establish tight bounds for adapted Wasserstein metrics by coupling
-  martingale transports with causal approximations, yielding new comparison
-  principles and stability estimates for stochastic control problems.
 ---
