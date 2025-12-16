@@ -41,6 +41,44 @@
   font-weight: 600; // navigation bar에서 현 페이지 제목 두께
 }
 
+.site-nav a:hover {
+  text-decoration: underline;
+    color: #222 !important;
+}
+
+.wrapper > section {
+  padding-top: 6rem; // navigation bar이랑 본문 사이의 거리
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-nav a {
+    color: #f5f5f5 !important;
+  }
+
+  .site-nav a:hover {
+    color: #ddd !important;
+  }
+}
+
+.no-profile header {
+  display: none;
+}
+
+.no-profile .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-profile section {
+  width: 100%;
+  max-width: 800px;
+  float: none;
+  padding-top: 6em; // navigation bar이랑 본문 사이의 거리
+  padding-bottom: 50px;
+}
+
+
 .publication-list {
   list-style: none;
   padding-left: 0;
