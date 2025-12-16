@@ -1,22 +1,27 @@
-main:
+# Publication entries displayed on the research page.
+# Add each publication under the `publications` key following the example structure.
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+publications:
+  - title: "On Robust Transport under Heavy Noise"
+    coauthors:
+      - Alice Smith
+      - Bob Lee
+    journal: Journal of Applied Mathematics
+    year: 2024
+    arxiv: https://arxiv.org/abs/2401.00001
+    journal_url: https://doi.org/10.1000/j.jam.2024.01.001
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+  - title: "Adaptive Optimal Transport for Time-Series Data"
+    coauthors: []
+    journal: SIAM Journal on Mathematics of Data Science
+    year: 2023
+    arxiv: https://arxiv.org/abs/2305.00002
+    journal_url: https://doi.org/10.1137/23M0000023
+
+  - title: "Stochastic Control Perspectives on Optimal Transport"
+    coauthors:
+      - Charlie Nguyen
+    journal: Annals of Applied Probability
+    year: 2022
+    arxiv: https://arxiv.org/abs/2203.00003
+    journal_url: https://doi.org/10.1214/22-AAP000
