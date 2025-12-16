@@ -8,8 +8,4 @@ coauthors:
 arxiv: https://arxiv.org/abs/2305.18636
 journal_url: https://www.sciencedirect.com/science/article/pii/S0304414924001728
 order: 2
-abstract: >-
-  We quantify concentration of empirical measures for radial transport costs,
-  showing how dimension-free tail bounds and refined coupling arguments capture
-  the geometry of radially symmetric costs.
 ---
