@@ -197,14 +197,14 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight: 660;
+  font-weight: 600;
   color:#111;
   margin:0 0 16px;
 }
 
 h2 {
   color:#111; // font color
-  font-weight: 660; // font 두께
+  font-weight: 600; // font 두께
   margin:0 0 16px; // font와 본문 사이의 margin
  // font-size: 157%; // font 크기
 }
@@ -375,7 +375,7 @@ header ul a:active {
 
 strong {
   color:#000;
-  font-weight:660; // bold의 두께 조절
+  font-weight:600; // bold의 두께 조절
 }
 
 header ul li + li + li {
