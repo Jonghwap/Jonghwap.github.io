@@ -7,11 +7,7 @@ hide_profile: true
 
 ## Publications
 
-<ol class="publication-list">
-  <li><span class="publication-rank">#3</span> dfd</li>
-  <li><span class="publication-rank">#2</span> dfsdf</li>
-  <li><span class="publication-rank">#1</span> **On**</li>
-</ol>
+{% include publication_list.html %}
 
 ### Focus areas
 - Adapted (causal) optimal transport and its applications
