@@ -23,12 +23,13 @@
       {% endif %}
       <div class="publication-meta">
         <em>{{ pub.journal }}</em>, {{ pub.year }}
+        {% assign abstract_text = pub.abstract | to_s | strip %}        
         {% assign has_journal_url = pub.journal_url and pub.journal_url != '' and pub.journal_url != empty %}
         {% assign has_arxiv = pub.arxiv and pub.arxiv != '' and pub.arxiv != empty %}
-        {% assign has_abstract = pub.abstract and pub.abstract != '' and pub.abstract != empty %}
+        {% assign has_abstract = abstract_text != '' %}
         {% assign show_link_row = has_journal_url or has_arxiv or has_abstract %}
-        {% assign abstract_id = pub.title | append: '-' | append: forloop.index0 | slugify | prepend: 'abstract-' %}
-        {% if show_link_row %}        
+        {% assign abstract_id = 'abstract-' | append: forloop.index0 %}
+        {% if show_link_row %}       
         <span class="publication-links">
           {% if has_arxiv %}          
           <a class="arxiv-button" href="{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>
@@ -41,7 +42,7 @@
             <span class="summary-label">summary</span>
             <span class="summary-arrow" aria-hidden="true">▼</span>
           </button>
-          {% endif %}          
+          {% endif %}         
         </span>
         {% endif %}
       </div>
