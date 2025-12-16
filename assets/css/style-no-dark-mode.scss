@@ -22,15 +22,55 @@
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem; // navigation bar에서 페이지 제목들 간의 간격
   margin: 0;
 }
 
 .site-nav a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400; // navigation bar에서 페이지 제목 두께
   color: #000 !important;
   padding: 0.25rem 0.5rem;
+}
+
+.site-nav a.active {
+  font-weight: 700; // navigation bar에서 현 페이지 제목--
+---
+
+@import "minimal-light-no-dark-mode";
+
+.wrapper {
+  position: relative;
+}
+
+.site-nav {
+  position: absolute;
+  top: 1.25rem;
+  right: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem; // navigation bar에서 페이지 제목들 간의 간격
+  margin: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 400; // navigation bar에서 페이지 제목 두께
+  color: #000 !important;
+  padding: 0.25rem 0.5rem;
+}
+
+.site-nav a.active {
+  font-weight: 640; // navigation bar에서 현 페이지 제목 두꼐
 }
 
 .site-nav a:hover {
