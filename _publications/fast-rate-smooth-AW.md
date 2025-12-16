@@ -8,8 +8,4 @@ coauthors:
 arxiv: https://arxiv.org/abs/2503.10827
 journal_url:
 order: 4
-abstract: >-
-  We analyze the smooth adapted Wasserstein distance and prove accelerated
-  convergence rates by combining smoothing techniques with concentration
-  inequalities tailored to causality constraints.
 ---
