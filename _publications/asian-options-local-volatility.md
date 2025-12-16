@@ -8,4 +8,8 @@ coauthors:
 arxiv: https://arxiv.org/abs/1911.12944
 journal_url:
 order: 1
+abstract: >-
+  We study short-maturity Asian options in local volatility models and derive
+  tractable pricing and hedging formulas that capture path dependence while
+  remaining robust to model misspecification.
 ---
