@@ -2,7 +2,7 @@
 # Add each publication under the `publications` key following the example structure.
 
 publications:
-  - title: "On a T_1 Transport inequality for the adapted Wasserstein distance"
+  - title: "On a $T_1$ Transport inequality for the adapted Wasserstein distance"
     coauthors: []
     journal: Under revision
     year: 2025
