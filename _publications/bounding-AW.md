@@ -9,4 +9,8 @@ coauthors:
 arxiv: https://arxiv.org/abs/2407.21492
 journal_url:
 order: 3
+abstract: >-
+  We prove a $T_1$ transport inequality for the adapted Wasserstein distance,
+  leveraging martingale concentration and conditional transport techniques to
+  control deviations in path space.
 ---
