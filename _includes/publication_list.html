@@ -1,9 +1,13 @@
 {% assign items = include.publications | default: site.data.publications.publications %}
 {% if items and items.size > 0 %}
+{% assign total = items.size %}
 <ol class="publication-list">
   {% for pub in items %}
   <li class="publication-entry">
-    <div class="publication-title"><strong>{{ pub.title }}</strong></div>
+    <div class="publication-title">
+      <span class="publication-rank">#{{ total | minus: forloop.index0 }}</span>
+      <strong>{{ pub.title }}</strong>
+    </div>
     {% if pub.coauthors and pub.coauthors.size > 0 %}
     <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
     {% endif %}
