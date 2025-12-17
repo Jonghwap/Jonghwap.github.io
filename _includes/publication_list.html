@@ -23,12 +23,12 @@
       {% endif %}
       <div class="publication-meta">
         <em>{{ pub.journal }}</em>, {{ pub.year }}    
-        {% assign arxiv_link = pub.arxiv | to_s | strip %}
-        {% assign journal_link = pub.journal_url | to_s | strip %}
-        {% assign abstract_text = pub.abstract | to_s | strip %}
-        {% assign has_journal_url = journal_link != '' %}
-        {% assign has_arxiv = arxiv_link != '' %}
-        {% assign has_abstract = abstract_text != '' %}
+        {% assign arxiv_link = pub.arxiv | default: '' | strip %}
+        {% assign journal_link = pub.journal_url | default: '' | strip %}
+        {% assign abstract_text = pub.abstract | default: '' | strip %}
+        {% assign has_journal_url = journal_link != blank %}
+        {% assign has_arxiv = arxiv_link != blank %}
+        {% assign has_abstract = abstract_text != blank %}
         {% assign show_link_row = has_journal_url or has_arxiv or has_abstract %}
         {% assign abstract_id = pub.title | append: '-' | append: forloop.index0 | slugify | prepend: 'abstract-' %}
         {% if show_link_row %}
