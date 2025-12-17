@@ -10,6 +10,5 @@ My research lies in **optimal transport**, **stochastic analysis** and their app
 
 During my PhD, I have primarily focused on developing the theory of adapted (causal) optimal transport. 
 
-Email: jonghwap [at] andrew [dot] cmu [dot] edu
-
+Email: jonghwap [at] andrew [dot] cmu [dot] edu  
 My CV is available <a class="accent-link" href="/assets/files/CV_Jonghwa_Park.pdf">here</a>.
