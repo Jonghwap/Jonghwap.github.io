@@ -9,5 +9,5 @@ arxiv: https://arxiv.org/abs/1911.12944
 journal_url:
 order: 1
 abstract: >-
-Asian options
+  We consider asian options in local volatility models. We present asymptotics for prices and deltas when the maturity $T$ is small. The decay of OTM and ITM options are known to be characterized by the large deviation principle. This paper derives asymptotic formulas for ATM options.
 ---
