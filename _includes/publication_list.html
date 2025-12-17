@@ -22,7 +22,15 @@
       <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
       {% endif %}
       <div class="publication-meta">
-        <em>{{ pub.journal }}</em>, {{ pub.year }}    
+        <em>{{ pub.journal }}</em>, {{ pub.year }}
+        
+          <small style="display:block; opacity:.6;">
+    DEBUG:
+    arxiv='{{ pub.arxiv }}' |
+    journal_url='{{ pub.journal_url }}' |
+    abstract_len='{{ pub.abstract | default: "" | size }}'
+  </small>
+        
         {% assign arxiv_link = pub.arxiv | default: '' | strip %}
         {% assign journal_link = pub.journal_url | default: '' | strip %}
         {% assign abstract_text = pub.abstract | default: '' | strip %}
