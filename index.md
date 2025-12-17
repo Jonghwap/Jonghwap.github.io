@@ -8,8 +8,6 @@ Hi, I am currently a PhD candidate in Mathematics at Carnegie Mellon University,
 
 My research lies in **optimal transport**, **stochastic analysis** and their applications to **mathematical finance** and related fields. I am particularly interested in robust formulations for high-noise, low-signal environments, where model uncertainty and misspecification are prevalent. 
 
-During my PhD, I have primarily focused on developing the theory of adapted (causal) optimal transport. 
-
 <p style="margin:0">
   Email: <span id="email-slot"></span><noscript>jonghwap [at] andrew [dot] cmu [dot] edu</noscript><script>
     (function () {
