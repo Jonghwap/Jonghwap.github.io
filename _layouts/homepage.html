@@ -56,7 +56,13 @@
         <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
         {% endif %}
 
-        <h3>Jonghwa Park (박종화)</h3>
+        {% if page.profile_note %}
+        <p class="profile-note">{{ page.profile_note }}</p>
+        {% elsif site.profile_note %}
+        <p class="profile-note">{{ site.profile_note }}</p>
+        {% else %}
+        <p class="profile-note">{{ site.title }}</p>
+        {% endif %}
         
         {% if site.position %}
         <position style="font-size:1.10rem;">{{ site.position }}</position>
