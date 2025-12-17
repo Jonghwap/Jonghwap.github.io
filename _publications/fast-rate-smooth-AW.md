@@ -9,7 +9,5 @@ arxiv: https://arxiv.org/abs/2503.10827
 journal_url:
 order: 4
 abstract: >-
-  We prove a $T_1$ transport inequality for the adapted Wasserstein distance,
-  leveraging martingale concentration and conditional transport techniques to
-  control deviations in path space.
+  Estimating a d-dimensional distribution $\mu$ by the empirical measure $\hat{\mu}_n$ of its samples is an important task in probability theory, statistics and machine learning. It is well known that $\mathbb{E}[\mathcal{W}_p(\hat{\mu}_n, \mu)]\lesssim n^{-1/d}$ for $d>2p$, where $\mathcal{W}_p$ denotes the p-Wasserstein metric. An effective tool to combat this curse of dimensionality is the smooth Wasserstein distance $\mathcal{W}^{(\sigma)}_p$, which measures the distance between two probability measures after having convolved them with isotropic Gaussian noise $\mathcal{N}(0,\sigma^2\text{I})$. In this paper we apply this smoothing technique to the adapted Wasserstein distance. We show that the smooth adapted Wasserstein distance $\mathcal{A}\mathcal{W}_p^{(\sigma)}$ achieves the fast rate of convergence $\mathbb{E}[\mathcal{A}\mathcal{W}_p^{(\sigma)}(\hat{\mu}_n, \mu)]\lesssim n^{-1/2}$, if $\mu$ is subgaussian. This result follows from the surprising fact, that any subgaussian measure $\mu$ convolved with a Gaussian distribution has locally Lipschitz kernels.
 ---
