@@ -293,6 +293,7 @@ a:hover {
   gap: 0.4em;
   flex-wrap: wrap;
   align-items: center;
+  --publication-button-font-weight: 600; // arxiv, journal, summary 안에 글씨 굵기
 }
 
 .arxiv-button, .journal-button, .summary-toggle {
@@ -304,7 +305,8 @@ a:hover {
   color: #039827;
   border: 1px solid #039827;
   border-radius: 6px;
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: var(--publication-button-font-weight, 500);
   line-height: 1.1; // 글씨 크기+위아래 여백
   font-size: 0.95rem;  
   text-decoration: none;
