@@ -9,7 +9,5 @@ arxiv: https://arxiv.org/abs/2305.18636
 journal_url: https://www.sciencedirect.com/science/article/pii/S0304414924001728
 order: 2
 abstract: >-
-  We prove a $T_1$ transport inequality for the adapted Wasserstein distance,
-  leveraging martingale concentration and conditional transport techniques to
-  control deviations in path space.
+  We establish concentration inequalities for the optimal transport cost under radial cost functions with superpolynomial growth. Compared to the Fournier--Guillin rate
 ---
