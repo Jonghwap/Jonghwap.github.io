@@ -295,24 +295,33 @@ a:hover {
   align-items: center;
 }
 
-.arxiv-button, .journal-button {
+.arxiv-button, .journal-button, .summary-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.1em 0.3em; // 버튼안 여백 위아래, 좌우
+  padding: 0.12em 0.4em; // 버튼안 여백 위아래, 좌우
   background-color: #ffffff;
   color: #039827;
   border: 1px solid #039827;
   border-radius: 6px;
   font-weight: 600;
   line-height: 1.1; // 글씨 크기+위아래 여백
+  font-size: 0.95rem;  
   text-decoration: none;
 }
+
+.summary-toggle {
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
 
 .arxiv-button:hover,
 .arxiv-button:focus,
 .journal-button:hover,
-.journal-button:focus {
+.journal-button:focus,
+.summary-toggle:hover,
+.summary-toggle:focus {
   background-color: #ecfdf3;
   color: #02661E;
   border-color: #02661E;
@@ -323,7 +332,7 @@ a:hover {
     color:#039827;
   }
 
-  .arxiv-button, .journal-button {
+  .arxiv-button, .journal-button, .summary-toggle {
     color: #039827;
     border-color: #039827;
   }
@@ -331,7 +340,9 @@ a:hover {
   .arxiv-button:hover,
   .arxiv-button:focus,
   .journal-button:hover,
-  .journal-button:focus {
+  .journal-button:focus,
+  .summary-toggle:hover,
+  .summary-toggle:focus {
     background-color: #1a2d1f;
     color: #02661E;
     border-color: #02661E;
@@ -340,19 +351,6 @@ a:hover {
 
 // summary 버튼 설정 
 
-.summary-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  padding: 0.1em 0.3em;
-  background-color: #ffffff;
-  color: #039827;
-  border: 1px solid #039827;
-  border-radius: 6px;
-  font-weight: 600;
-  line-height: 1.1;
-  cursor: pointer;
-}
 
 .summary-toggle .summary-arrow {
   display: inline-block;
@@ -364,12 +362,6 @@ a:hover {
   transform: rotate(180deg);
 }
 
-.summary-toggle:hover,
-.summary-toggle:focus {
-  background-color: #ecfdf3;
-  color: #02661E;
-  border-color: #02661E
-}
 
 .abstract-panel {
   margin-top: 0.35rem;
