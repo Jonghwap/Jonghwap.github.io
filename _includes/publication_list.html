@@ -26,12 +26,12 @@
         {% assign arxiv_link = pub.arxiv | default: '' | strip %}
         {% assign journal_link = pub.journal_url | default: '' | strip %}
         {% assign abstract_text = pub.abstract | default: '' | strip %}
-        {% assign has_journal_url = journal_link | size | plus: 0 %}
-        {% assign has_arxiv = arxiv_link | size | plus: 0 %}
-        {% assign has_abstract = abstract_text != blank %}
-        {% assign show_link_row = has_journal_url or has_arxiv or has_abstract %}
+        {% assign has_journal_url = journal_link | size %}
+        {% assign has_arxiv = arxiv_link | size %}
+        {% assign has_abstract = abstract_text | size %}
+        {% assign show_link_row = has_journal_url | plus: has_arxiv | plus: has_abstract %}
         {% assign abstract_id = pub.title | append: '-' | append: forloop.index0 | slugify | prepend: 'abstract-' %}
-        {% if show_link_row %}
+        {% if show_link_row > 0 %}
         <span class="publication-links">
           {% if has_arxiv > 0 %}
           <a class="arxiv-button" href="{{ arxiv_link }}" target="_blank" rel="noopener">arXiv</a>
@@ -39,7 +39,7 @@
           {% if has_journal_url > 0 %}
           <a class="journal-button" href="{{ journal_link }}" target="_blank" rel="noopener">journal</a>
           {% endif %}
-          {% if has_abstract %}
+          {% if has_abstract > 0 %}
           <button class="summary-toggle" type="button" aria-expanded="false" aria-controls="{{ abstract_id }}">
             <span class="summary-label">summary</span>
             <span class="summary-arrow" aria-hidden="true">▼</span>
@@ -48,7 +48,7 @@
         </span>   
         {% endif %}
       </div>
-      {% if has_abstract %}
+      {% if has_abstract > 0 %}
       <div class="abstract-panel" id="{{ abstract_id }}" hidden>
         <div class="abstract-content">{{ pub.abstract | markdownify }}</div>
       </div>
