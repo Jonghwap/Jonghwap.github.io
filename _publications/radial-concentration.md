@@ -9,5 +9,5 @@ arxiv: https://arxiv.org/abs/2305.18636
 journal_url: https://www.sciencedirect.com/science/article/pii/S0304414924001728
 order: 2
 abstract: >-
-  We establish concentration inequalities for the optimal transport cost under radial cost functions with superpolynomial growth. Compared to the Fournier--Guillin rate
+  We establish concentration inequalities for the optimal transport cost under radial cost functions with superpolynomial growth. Compared to the classical Fournier-Guillin rate for the Wasserstein distance $\mathcal{w}_p$, our new estimates provide sharper rates.
 ---
