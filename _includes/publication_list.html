@@ -24,7 +24,7 @@
       <div class="publication-meta">
         <em>{{ pub.journal }}</em>, {{ pub.year }}    
         {% assign arxiv_link = pub.arxiv | to_s | strip %}
-        {% assign journal_link = pub.journal_url | default: '' | strip %}
+        {% assign journal_link = pub.journal_url | to_s | strip %}
         {% assign abstract_text = pub.abstract | to_s | strip %}
         {% assign has_journal_url = journal_link != '' %}
         {% assign has_arxiv = arxiv_link != '' %}
