@@ -142,6 +142,19 @@
   font-size: 1.02rem;
 }
 
+.talk-meta {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.talk-meta .talk-links {
+  margin-left: auto;
+}
+
+
 .talk-secondary {
   color: #111;
 }
