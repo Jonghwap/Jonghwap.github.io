@@ -5,4 +5,4 @@ permalink: /talks/
 hide_profile: true
 ---
 
-## Selected presentations
+## Presentations
