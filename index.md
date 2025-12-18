@@ -20,5 +20,5 @@ My research lies in **optimal transport**, **stochastic analysis** and their app
       document.getElementById('email-slot').appendChild(link);
     })();
   </script><br>
-  My CV is available <a class="accent-link" href="/assets/files/CV_Jonghwa_Park.pdf">here</a>.
+  My CV is available <a class="accent-link" href="/assets/CV/CV_Jonghwa_Park.pdf">here</a>.
 </p>
