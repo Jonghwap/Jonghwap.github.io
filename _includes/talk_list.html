@@ -17,6 +17,21 @@
       {% comment %}Show the month/year string exactly as specified in the talk's front matter date field.{% endcomment %}
       <div class="talk-primary"><strong>{{ talk.conference }}</strong>, {{ talk.date | date: "%b %Y" }}</div>
       <div class="talk-secondary">{{ talk.location }}, {{ talk.country }}</div>
+      {% assign slides_link = talk.slides | default: '' | strip %}
+      {% assign poster_link = talk.poster | default: '' | strip %}
+      {% assign has_slides = slides_link | size %}
+      {% assign has_poster = poster_link | size %}
+      {% assign show_link_row = has_slides | plus: has_poster %}
+      {% if show_link_row > 0 %}
+      <span class="talk-links">
+        {% if has_slides > 0 %}
+        <a class="slides-button" href="{{ slides_link }}" target="_blank" rel="noopener">slides</a>
+        {% endif %}
+        {% if has_poster > 0 %}
+        <a class="poster-button" href="{{ poster_link }}" target="_blank" rel="noopener">poster</a>
+        {% endif %}
+      </span>
+      {% endif %}      
     </div>
   </li>
   {% endfor %}
