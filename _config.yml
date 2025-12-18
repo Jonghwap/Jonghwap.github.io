@@ -66,3 +66,5 @@ navigation:
 collections:
   publications:
     output: false
+  talks:
+    output: false
