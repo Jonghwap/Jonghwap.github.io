@@ -14,7 +14,8 @@
   <li class="talk-entry">
     <span class="talk-bullet">#</span>
     <div class="talk-details">
-      <div class="talk-primary"><strong>{{ talk.conference }}</strong>, {{ talk.date }}</div>
+      {% comment %}Show the month/year string exactly as specified in the talk's front matter date field.{% endcomment %}
+      <div class="talk-primary"><strong>{{ talk.conference }}</strong>, {{ talk.date | date: "%b %Y" }}</div>
       <div class="talk-secondary">{{ talk.location }}, {{ talk.country }}</div>
     </div>
   </li>
