@@ -1,8 +1,8 @@
 ---
 layout: homepage
-title: Teaching
-permalink: /teaching/
+title: Talks
+permalink: /talks/
 hide_profile: true
 ---
 
-## Teaching
+## Talks
