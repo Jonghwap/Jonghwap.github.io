@@ -296,7 +296,8 @@ a:hover {
   text-decoration:underline;
 }
 
-.publication-links {
+.publication-links,
+.talk-links {
   display: inline-flex;
   gap: 0.4em;
   flex-wrap: wrap;
@@ -304,7 +305,7 @@ a:hover {
   --publication-button-font-weight: 500; // arxiv, journal, summary 안에 글씨 굵기
 }
 
-.arxiv-button, .journal-button, .summary-toggle {
+.arxiv-button, .journal-button, .summary-toggle, .poster-button, .slides-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -331,7 +332,11 @@ a:hover {
 .journal-button:hover,
 .journal-button:focus,
 .summary-toggle:hover,
-.summary-toggle:focus {
+.summary-toggle:focus,
+.poster-button:hover,
+.poster-button:focus,
+.slides-button:hover,
+.slides-button:focus {
   background-color: #ecfdf3;
   color: #02661E;
   border-color: #02661E;
@@ -342,7 +347,7 @@ a:hover {
     color:#039827;
   }
 
-  .arxiv-button, .journal-button, .summary-toggle {
+  .arxiv-button, .journal-button, .summary-toggle, .poster-button, .slides-button {
     color: #039827;
     border-color: #039827;
   }
@@ -352,7 +357,11 @@ a:hover {
   .journal-button:hover,
   .journal-button:focus,
   .summary-toggle:hover,
-  .summary-toggle:focus {
+  .summary-toggle:focus,
+  .poster-button:hover,
+  .poster-button:focus,
+  .slides-button:hover,
+  .slides-button:focus {
     background-color: #1a2d1f;
     color: #02661E;
     border-color: #02661E;
