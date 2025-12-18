@@ -82,6 +82,25 @@
   padding-top: 6rem; // navigation bar이랑 본문 사이의 거리
 }
 
+@media (max-width: 960px) {
+  .site-nav {
+    position: static;
+    top: auto;
+    right: auto;
+    margin: 1rem 0 1.5rem;
+    justify-content: center;
+  }
+
+  .site-nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .wrapper > section {
+    padding-top: 2rem;
+  }
+}
 
 .no-profile header {
   display: none;
