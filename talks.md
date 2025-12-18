@@ -6,3 +6,7 @@ hide_profile: true
 ---
 
 ## Presentations
+
+
+
+{% include talk_list.html %}
