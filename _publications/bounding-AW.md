@@ -1,6 +1,6 @@
 ---
 title: "Bounding adapted Wasserstein metrics"
-year: 2024
+year: 2026+
 journal: Annales de l’Institut Henri Poincaré (B), to appear
 coauthors:
   - <a href="https://web.stanford.edu/~jblanche/" target="_blank" rel="noopener">Jose Blanchet</a>
