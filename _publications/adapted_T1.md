@@ -1,6 +1,6 @@
 ---
 title: "On a $T_1$ Transport inequality for the adapted Wasserstein distance"
-year: 2026+
+year: 2026
 journal: Electronic Communications in Probability 31, 1-12
 coauthors: []
 arxiv: https://www.arxiv.org/abs/2507.19215
