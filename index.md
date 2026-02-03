@@ -1,5 +1,6 @@
 ---
 layout: homepage
+hide_favicon: true
 ---
 
 ## About Me
