@@ -256,6 +256,11 @@ a:hover {
   gap: 0.6rem;
 }
 
+.publication-entry + .publication-entry {
+  margin-top: 0.8rem;
+}
+
+
 .publication-rank {
   color: #039827;
   font-weight: 600;
