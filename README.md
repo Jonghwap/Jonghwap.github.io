@@ -18,8 +18,7 @@ An improved vision from [@Xiao-Chenguang](https://github.com/Xiao-Chenguang): [[
 - Jekyll theme, automatically deployed by GitHub Pages
 - Basic search engine optimization
 - Mobile friendly
-- Supporting Markdown 
-- Supporting dark mode
+- Supporting Markdown
 
 ## Project Architecture
 
@@ -33,8 +32,7 @@ An improved vision from [@Xiao-Chenguang](https://github.com/Xiao-Chenguang): [[
 ├── _layouts                  
 |   └── homepage.html                         #  the html template for the homepage 
 ├── _sass
-|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
-|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
+|   ├── minimal-light-no-dark-mode.scss       #  this file will be compiled into a CSS file to control the style of the page
 ├── assets                                    #  some files
 ├── html_source_file                          #  compiled HTML files
 ├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
@@ -129,19 +127,13 @@ github_link: https://github.com/
 linkedin: https://www.linkedin.com/
 twitter: https://twitter.com/
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+# Images (e.g., your profile picture and your website's favicon)
 avatar: ./assets/img/avatar.png
 favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
 enable_footnote: true
-
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
@@ -166,11 +158,11 @@ https://github.com/yaoyao-liu/minimal-light/blob/77b1b3b31d4561091bcd739f37a2e18
 
 ### Stylesheet
 
-If you'd like to add your own custom styles, you may edit `_sass/minimal-light.scss`.
+If you'd like to add your own custom styles, you may edit `_sass/minimal-light-no-dark-mode.scss`.
 
 ### Layouts
 
-If you'd like to change the theme's HTML layout, you may edit `_layout/homepage.html`.
+If you'd like to change the theme's HTML layout, you may edit `_layouts/homepage.html`.
 
 ## License
 
