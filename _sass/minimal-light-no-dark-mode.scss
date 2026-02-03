@@ -237,12 +237,21 @@ h1 {
 }
 
 a {
-  color:#039827;
+  color: inherit;
   text-decoration:none;
 }
 
 a:hover {
   color:#02661E
+  color: inherit;
+}
+
+.accent-link {
+  color: #039827;
+}
+
+.accent-link:hover {
+  color: #02661E;
 }
 
 
