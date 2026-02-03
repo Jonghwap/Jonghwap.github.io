@@ -67,6 +67,7 @@
   font-weight: 400; // navigation bar에서 페이지 제목 두께
   color: #000 !important;
   padding: 0.25rem 0.5rem;
+  font-size: 1.2rem; // navigation bar에서 font size
 }
 
 .site-nav a.active {
@@ -156,17 +157,25 @@
   margin: 0 0 1.5rem 0;
 }
 
-.publication-entry {
+.publication-list > li {
+  margin-bottom: 0.75rem;
   display: flex;
   column-gap: 0.5rem;
   align-items: flex-start;
-  margin-bottom: 0.75rem;
 }
 
 .publication-rank {
-  color: #039827;
   font-weight: 700;
-  min-width: 1.5rem;
+  color: #039827;
+  min-width: 2.5rem;
   text-align: right;
   padding-top: 0.1rem;
 }
+
+.publication-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
