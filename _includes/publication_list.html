@@ -10,9 +10,10 @@
 {% assign sorted = sorted_by_title | sort: "year" | reverse %}
 {% endif %}
 {% assign total = sorted.size %}
-<ol class="publication-list" start="{{ total }}" reversed>
+<ol class="publication-list">
   {% for pub in sorted %}
   <li class="publication-entry">
+    <span class="publication-rank">#{{ total | minus: forloop.index0 }}</span>
     <div class="publication-details">
       <div class="publication-title">
         <strong>{{ pub.title }}</strong>
