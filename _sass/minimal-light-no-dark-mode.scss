@@ -127,8 +127,22 @@ darkonly {
   visibility: hidden;
 }
 
+:root {
+  --page-scale: 1.1;
+}
+
+
 body {
   color: #111;
+  zoom: var(--page-scale);
+}
+
+@supports not (zoom: 1) {
+  body {
+    transform: scale(var(--page-scale));
+    transform-origin: top center;
+    width: calc(100% / var(--page-scale));
+  }
 }
 
 header {
