@@ -245,6 +245,13 @@ a:hover {
   color:#02661E
 }
 
+.publication-list ::marker {
+  color: #039827;
+  font-weight: 600;
+  content: "#" counter(list-item);
+}
+
+
 .publication-list {
   list-style: none;
   padding-left: 0;
