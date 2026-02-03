@@ -245,6 +245,24 @@ a:hover {
   color:#02661E
 }
 
+.publication-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.publication-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.publication-rank {
+  color: #039827;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
 
 .publication-links,
 .talk-links {
