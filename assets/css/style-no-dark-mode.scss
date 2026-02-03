@@ -147,3 +147,26 @@
 .talk-secondary {
   color: #111;
 }
+
+// publication 설정
+
+.publication-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.publication-entry {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.publication-rank {
+  color: #039827;
+  font-weight: 700;
+  min-width: 1.5rem;
+  text-align: right;
+  padding-top: 0.1rem;
+}
