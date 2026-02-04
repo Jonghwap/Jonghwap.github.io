@@ -1,7 +1,7 @@
 ---
 title: "Bounding adapted Wasserstein metrics"
 year: 2026+
-journal: Annales de l'Institut Henri Poincaré (B) Probabilités et Statistiques, to appear
+journal: To appear in Annales de l'Institut Henri Poincaré (B) Probabilités et Statistiques
 coauthors:
   - <a href="https://web.stanford.edu/~jblanche/" target="_blank" rel="noopener">Jose Blanchet</a>
   - <a href="https://sites.google.com/view/martin-larsson" target="_blank" rel="noopener">Martin Larsson</a>
