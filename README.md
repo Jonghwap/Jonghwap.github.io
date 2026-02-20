@@ -142,6 +142,10 @@ font: "Serif" # or "Sans Serif"
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
 google_analytics: UA-111540567-4
+
+# Google Search Console HTML meta-tag verification code
+# Paste only the code value from content="..."
+# google_site_verification: ""
   ```
 ### Edit `index.md`
 
