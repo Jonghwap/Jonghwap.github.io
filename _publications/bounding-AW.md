@@ -7,7 +7,7 @@ coauthors:
   - <a href="https://sites.google.com/view/martin-larsson" target="_blank" rel="noopener">Martin Larsson</a>
   - <a href="https://sites.google.com/view/johannes-wiesel" target="_blank" rel="noopener">Johannes Wiesel</a>
 arxiv: https://arxiv.org/abs/2407.21492
-journal_url:
+journal_url: https://imstat.org/journals-and-publications/annales-de-linstitut-henri-poincare/annales-de-linstitut-henri-poincare-accepted-papers/
 order: 3
 abstract: |-
   While the topological differences between the adapted Wasserstein distance $\mathcal{A}\mathcal{W}_p$ and the Wasserstein distance $\mathcal{W}_p$ are well understood, their differences as metrics remain largely unexplored beyond the trivial bound $\mathcal{W}_p\lesssim \mathcal{A}\mathcal{W}_p$. This paper closes this gap by providing upper bounds of $\mathcal{A}\mathcal{W}_p$ in terms of $\mathcal{W}_p$ through investigation of the smooth adapted Wasserstein distance. Our upper bounds are explicit and are given by a sum of $\mathcal{W}_p$, Eder's modulus of continuity and a term characterizing the tail behavior of measures. As a consequence, upper bounds on $\mathcal{W}_p$ automatically hold for $\mathcal{AW}_p$ under mild regularity assumptions on the measures considered. A particular instance of our findings is the inequality $\mathcal{A}\mathcal{W}_1\le C\sqrt{\mathcal{W}_1}$ on the set of measures that have Lipschitz kernels.
