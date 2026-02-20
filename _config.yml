@@ -22,8 +22,7 @@ plugins:
   - jekyll-seo-tag
 
 # Site Verfication
-webmaster_verifications:
-google: <meta name="google-site-verification" content="mgghbUT2uf_4FlHDnmQF5eQcDMU6sO3kQJthyJAxUtE" />
+google_site_verification: <meta name="google-site-verification" content="mgghbUT2uf_4FlHDnmQF5eQcDMU6sO3kQJthyJAxUtE" />
   
 
 # Links 
