@@ -48,6 +48,10 @@ font: "Sans Serif"
 # Please remove this if you don't use Google Analytics
 google_analytics: G-3LC1JPEB6T
 
+# Google Search Console HTML meta-tag verification code
+# Paste only the code value from content="..."
+google_site_verification: "mgghbUT2uf_4FlHDnmQF5eQcDMU6sO3kQJthyJAxUtE"
+
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
 remote_theme: yaoyao-liu/minimal-light
