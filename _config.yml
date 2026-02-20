@@ -21,6 +21,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Site Verfication
+webmaster_verifications:
+google: <meta name="google-site-verification" content="mgghbUT2uf_4FlHDnmQF5eQcDMU6sO3kQJthyJAxUtE" />
+  
+
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 # google_scholar: https://scholar.google.com/
