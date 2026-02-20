@@ -11,6 +11,16 @@ keywords: jonghwa park, 박종화, math, phd, Carnegie Mellon, CMU, ETH, Zurich
 description: This is the personal webpage of Jonghwa Park.
 canonical: https://jonghwap.github.io/
 
+# Site URL settings (used by sitemap/canonical generation)
+url: "https://jonghwap.github.io"
+baseurl: ""
+lang: en
+
+# GitHub Pages supported SEO plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 # google_scholar: https://scholar.google.com/
