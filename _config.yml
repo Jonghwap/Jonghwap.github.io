@@ -7,9 +7,9 @@ profile_note: Jonghwa Park<br><span class="profile-note-korean">박종화</span>
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: jonghwa park, 박종화, math, phd, Carenegie Mellon, CMU, ETH, Zurich
+keywords: jonghwa park, 박종화, math, phd, Carnegie Mellon, CMU, ETH, Zurich
 description: This is the personal webpage of Jonghwa Park.
-# canonical: https://minimal-light-theme.yliu.me/
+canonical: https://jonghwap.github.io/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
