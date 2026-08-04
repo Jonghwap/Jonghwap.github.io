@@ -22,7 +22,7 @@
       <div class="publication-coauthors">With {{ pub.coauthors | join: ", " }}</div>
       {% endif %}
       <div class="publication-meta">
-        <span class="publication-venue">{{ pub.journal }}, {{ pub.year }}</span>
+        <span class="publication-venue">{{ pub.journal }}</span>, <span class="publication-year">{{ pub.year }}</span>
         {% assign arxiv_link = pub.arxiv | default: '' | strip %}
         {% assign journal_link = pub.journal_url | default: '' | strip %}
         {% assign abstract_text = pub.abstract | default: '' | strip %}
