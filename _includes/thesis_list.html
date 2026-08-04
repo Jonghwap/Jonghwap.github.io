@@ -1,0 +1,23 @@
+{% assign items = include.theses | default: site.thesis %}
+{% if items and items.size > 0 %}
+<ul class="talk-list">
+  {% for thesis in items %}
+  <li class="talk-entry">
+    <span class="talk-bullet">#</span>
+    <div class="talk-details">
+      <div class="talk-primary"><strong>{{ thesis.title }}</strong></div>
+      <div class="talk-secondary">{{ thesis.type }}</div>
+      <div class="talk-secondary">{{ thesis.school }}</div>
+      {% assign thesis_link = thesis.link | default: '' | strip %}
+      {% if thesis_link != '' %}
+      <div class="talk-links">
+        <a class="journal-button" href="{{ thesis_link }}" target="_blank" rel="noopener">link</a>
+      </div>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No thesis has been added yet. Add an entry under <code>_thesis/</code> to list it.</p>
+{% endif %}
