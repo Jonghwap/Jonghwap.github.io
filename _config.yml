@@ -78,3 +78,5 @@ collections:
     output: false
   talks:
     output: false
+  thesis:
+    output: false
