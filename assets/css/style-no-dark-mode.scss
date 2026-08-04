@@ -183,17 +183,19 @@
 //   color: #555;
 // }
 
-// 데스크톱에서 전체 콘텐츠 폭을 줄여 좌우 여백을 넓힘
+// 데스크톱에서 본문을 넓히고 좌우 여백을 줄임
 @media screen and (min-width: 961px) {
   .wrapper {
-    width: 900px;        // 홈페이지 전체 폭
+    width: calc(100% - 40px);
+    max-width: 1040px; // 홈페이지 전체 폭
   }
 
   section {
-    width: 610px;         // 프로필 사진 오른쪽의 본문 폭
+    width: calc(100% - 320px);
+    max-width: 720px; // 프로필 사진 오른쪽의 본문 폭
   }
 
   .no-profile section {
-    max-width: 760px;         // 프로필이 없는 Research, Talks 페이지의 본문 폭
+    max-width: 900px; // 프로필이 없는 Research, Talks 페이지의 본문 폭
   }
 }
