@@ -6,14 +6,15 @@
     <span class="talk-bullet">#</span>
     <div class="talk-details">
       <div class="talk-primary"><strong>{{ thesis.title }}</strong></div>
-      <div class="talk-secondary">{{ thesis.type }}</div>
-      <div class="talk-secondary">{{ thesis.school }}</div>
-      {% assign thesis_link = thesis.link | default: '' | strip %}
-      {% if thesis_link != '' %}
-      <div class="talk-links">
-        <a class="journal-button" href="{{ thesis_link }}" target="_blank" rel="noopener">link</a>
+      <div class="talk-meta">
+        <div class="talk-secondary">{{ thesis.type }}, {{ thesis.school }}</div>
+        {% assign thesis_link = thesis.link | default: '' | strip %}
+        {% if thesis_link != '' %}
+        <span class="talk-links">
+          <a class="journal-button" href="{{ thesis_link }}" target="_blank" rel="noopener">Link</a>
+        </span>
+        {% endif %}
       </div>
-      {% endif %}
     </div>
   </li>
   {% endfor %}
