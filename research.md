@@ -16,3 +16,7 @@ My Google Scholar page is available <a class="accent-link" href="https://scholar
 {% include publication_list.html %}
 
 <br>
+
+## Thesis
+
+{% include thesis_list.html %}
