@@ -182,3 +182,18 @@
 // .publication-coauthors {
 //   color: #555;
 // }
+
+// 데스크톱에서 전체 콘텐츠 폭을 줄여 좌우 여백을 넓힘
+@media screen and (min-width: 961px) {
+  .wrapper {
+    width: 900px;
+  }
+
+  section {
+    width: 610px;
+  }
+
+  .no-profile section {
+    max-width: 760px;
+  }
+}
