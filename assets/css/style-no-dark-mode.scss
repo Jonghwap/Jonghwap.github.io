@@ -179,16 +179,14 @@
   gap: 0.15rem;
 }
 
-.publication-title {
+.publication-venue {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.98rem;
-  font-weight: 600;
+  font-size: 0.93rem;
+  font-style: normal;
+  font-weight: 500;
   line-height: 1.35;
-  letter-spacing: -0.012em;
-}
-
-.publication-title strong {
-  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #333;
 }
 
 // .publication-coauthors {
