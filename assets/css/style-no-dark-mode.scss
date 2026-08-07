@@ -207,12 +207,12 @@
 .talk-links {
   --publication-button-font-weight: 400;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  gap: 0.12em; // [arxiv] · [journal] · [summary], [slides] · [poster] 사이의 기본 간격
+  gap: 0.18em; // [arxiv] · [journal] · [summary], [slides] · [poster] 사이의 기본 간격
 }
 
 .publication-links > * + *::before,
 .talk-links > * + *::before {
-  margin-right: 0.12em; // 점(·)과 다음 링크 사이의 간격
+  margin-right: 0.18em; // 점(·)과 다음 링크 사이의 간격
 }
 
 .arxiv-button:hover,
