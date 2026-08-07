@@ -245,12 +245,16 @@
   margin-right: 0;
 }
 
-.summary-arrow {
-  margin-left: 0.00em; // summary와 ▾ 사이의 간격 0.04
+.summary-toggle .summary-arrow {
+  font-size: 1.15em; // ▾ 글자 크기
+  margin-left: -0.06em; // ▾ 글리프 자체의 왼쪽 여백을 상쇄
+  margin-right: -0.05em; // 오른쪽 대괄호와의 불필요한 여백도 상쇄
+  transform: scale(1.2); // ▾를 시각적으로 확실히 키움
+  transform-origin: center;
 }
 
-.summary-toggle .summary-arrow {
-  font-size: 1em; // ▾ 크기
+.summary-toggle.is-open .summary-arrow {
+  transform: scale(1.2) rotate(180deg);
 }
 
 .summary-toggle:hover .summary-label,
