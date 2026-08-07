@@ -245,6 +245,10 @@
   margin-right: 0;
 }
 
+.summary-arrow {
+  margin-left: 0.04em; // summary와 ▼ 사이의 간격
+}
+
 .summary-toggle:hover .summary-label,
 .summary-toggle:focus .summary-label {
   text-decoration: underline;
