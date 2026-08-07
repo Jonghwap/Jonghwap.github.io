@@ -208,6 +208,41 @@
   --publication-button-font-weight: 400;
 }
 
+.arxiv-button:hover,
+.arxiv-button:focus,
+.journal-button:hover,
+.journal-button:focus,
+.poster-button:hover,
+.poster-button:focus,
+.slides-button:hover,
+.slides-button:focus {
+  text-decoration: none;
+}
+
+.arxiv-button:hover .link-label,
+.arxiv-button:focus .link-label,
+.journal-button:hover .link-label,
+.journal-button:focus .link-label,
+.poster-button:hover .link-label,
+.poster-button:focus .link-label,
+.slides-button:hover .link-label,
+.slides-button:focus .link-label {
+  text-decoration: underline;
+}
+
+.summary-toggle {
+  gap: 0.25em;
+}
+
+.publication-links > .summary-toggle::before {
+  margin-right: 0;
+}
+
+.summary-toggle:hover .summary-label,
+.summary-toggle:focus .summary-label {
+  text-decoration: underline;
+}
+
 // 데스크톱에서 본문을 넓히고 좌우 여백을 줄임
 @media screen and (min-width: 961px) {
   .wrapper {
