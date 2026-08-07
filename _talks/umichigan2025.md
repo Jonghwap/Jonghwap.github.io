@@ -5,5 +5,5 @@ location: University of Michigan
 country: US
 order: 4
 slides: /assets/talks_slides/umichigan2025.pdf
-poster: /assets/talks_slides/umichigan2025.pdf
+poster:
 ---
