@@ -202,6 +202,11 @@
 //   color: #555;
 // }
 
+.publication-links,
+.talk-links {
+  --publication-button-font-weight: 400;
+}
+
 // 데스크톱에서 본문을 넓히고 좌우 여백을 줄임
 @media screen and (min-width: 961px) {
   .wrapper {
