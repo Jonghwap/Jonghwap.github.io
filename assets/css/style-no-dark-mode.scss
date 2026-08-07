@@ -246,7 +246,11 @@
 }
 
 .summary-arrow {
-  margin-left: 0.06em; // summary와 ▼ 사이의 간격
+  margin-left: 0.06em; // summary와 ▾ 사이의 간격
+}
+
+.summary-toggle .summary-arrow {
+  font-size: 0.95em; // ▾ 크기
 }
 
 .summary-toggle:hover .summary-label,
