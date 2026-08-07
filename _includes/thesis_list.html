@@ -11,7 +11,7 @@
         {% assign thesis_link = thesis.link | default: '' | strip %}
         {% if thesis_link != '' %}
         <span class="talk-links">
-          <a class="journal-button" href="{{ thesis_link }}" target="_blank" rel="noopener">[link]</a>
+          <a class="journal-button" href="{{ thesis_link }}" target="_blank" rel="noopener"><span class="link-label">[link]</span></a>
         </span>
         {% endif %}
       </div>
